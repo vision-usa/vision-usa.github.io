@@ -2436,19 +2436,25 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 			switch (number.charAt(6)) {
 				case '3': 
 					document.getElementById("pnamenumber").innerHTML = "670-0070001030";
+					document.getElementById("ptype").innerHTML = "VISION HB METRON 6D V17";
+					document.getElementById("rname").innerHTML = "Vision Metron Integrated 6D Carbon Handlebar";
+					document.getElementById("rimage").src = "https://assets.probikeshop.fr/images/products2/448/157671/600x600-157671_15785558839262.jpg"					
+					break;
+				case '4': 
+					document.getElementById("pnamenumber").innerHTML = "670-0070001030";
 					document.getElementById("ptype").innerHTML = "VISION HB METRON 5D V17";
 					document.getElementById("rname").innerHTML = "Vision Metron Integrated 5D Carbon Handlebar";
 					break;
-				case '4': 
+				case '5': 
 					temp = "Bianchi " + temp;
 					document.getElementById("rimage").src = "https://az1p22uc.cdn.imgeng.in/content/products/bianchi-bianchi-cbck-metron-5d-handlebar_41140.jpg"
 					document.getElementById("pnamenumber").innerHTML = "670-0070001030";
-					document.getElementById("ptype").innerHTML = "VISION HB METRON 6D V17";
-					document.getElementById("rname").innerHTML = "Vision Metron Integrated 6D Carbon Handlebar";
+					document.getElementById("ptype").innerHTML = "VISION HB METRON 5D V17";
+					document.getElementById("rname").innerHTML = "Vision Metron Bianchi Integrated 6D Carbon Handlebar";
 					break;
 				default: badresult = true;
 			}
-			document.getElementById("rname").innerHTML = temp;
+			//document.getElementById("rname").innerHTML = temp;
 			console.log("6 bad " + badresult);
 		  
 			var i = 0, count = 0;
