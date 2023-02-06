@@ -1884,7 +1884,14 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="close-menu"><a href="#"><i class="icon adt icon-close"></i><span style="font-size: 0px">Close</span></a></span>
+			<script>
+			function showhide() {
+				let aaa = document.getElementById("menuu");
+				if (aaa.style.display != "none") aaa.style.display = "none"
+				else aaa.style.display = "block";
+			}
+			</script>
+            <span class="close-menu" onclick="showhide()"><a href="#"><i class="icon adt icon-close"></i><span style="font-size: 0px">Close</span></a></span>
           </button>
           <div class="brand-container">
             <a class="navbar-brand" data-savepage-href="/en/" href="https://www.visiontechusa.com/en/">
@@ -2169,7 +2176,7 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 
 <div class="container">
   <div class="row">
-    <div class="col-md-3 col-lg-3">
+    <div class="col-md-3 col-lg-3" id="menuu" style="display:none">
         <div class="region region-sidebar-first well">
     <section id="block-menu-menu-support-vision" class="block block-menu clearfix affix-top" style="width: 248px;">
 
