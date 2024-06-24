@@ -2400,7 +2400,9 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 		document.getElementById("serial").value = number;
 		document.getElementById("rserial").innerHTML = number;
 		document.getElementById("rmanu").innerHTML = "Taiwan";
-		
+		// 01234567
+		// 11613226 acr non intergrated 400
+		// 17613222 acr non intergrated 380
 		try {
 			badresult = number.length != 8;
 		  
@@ -2417,6 +2419,7 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 				case '1': tmp = "400mm"; break;
 				case '3': tmp = "420mm"; break;
 				case '4': tmp = "440mm"; break;
+				case '7': tmp = "380mm"; break;
 				default: badresult = true;
 			}
 			//document.getElementById("rprod").innerHTML = "601479858903";
